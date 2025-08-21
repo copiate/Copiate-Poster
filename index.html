@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Copiate – Promotional Poster</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #0a0a0a;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      color: #fff;
+      flex-direction: column;
+    }
+    .poster {
+      width: 1080px;
+      height: 1350px;
+      background: linear-gradient(135deg, #111, #000);
+      border-radius: 20px;
+      box-shadow: 0 0 80px rgba(255, 0, 128, 0.4);
+      padding: 60px;
+      box-sizing: border-box;
+      position: relative;
+      overflow: hidden;
+    }
+    .poster::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: conic-gradient(#ff0080, #ff8c00, #ffd300, #3fe0a3, #00b3ff, #8a5cff, #ff0080);
+      animation: spin 12s linear infinite;
+      filter: blur(100px);
+      opacity: 0.4;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    .poster-content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+    }
+    .poster-logo img {
+      max-width: 300px;
+      margin-bottom: 20px;
+    }
+    .brand {
+      font-size: 100px;
+      font-weight: 900;
+      background: linear-gradient(to bottom, #fff, rgba(255,255,255,0.6));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin: 0;
+    }
+    .tagline {
+      font-size: 36px;
+      color: rgba(255,255,255,0.8);
+      margin-top: 10px;
+    }
+    .offer {
+      margin: 60px auto;
+      padding: 20px 30px;
+      border-radius: 20px;
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.15);
+      display: inline-block;
+    }
+    .offer-title {
+      font-size: 18px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.7);
+      margin-bottom: 10px;
+    }
+    .offer-text {
+      font-size: 52px;
+      font-weight: 800;
+    }
+    .subline {
+      font-size: 24px;
+      color: rgba(255,255,255,0.75);
+      margin: 40px 0;
+    }
+    .cta {
+      display: inline-block;
+      padding: 20px 50px;
+      border-radius: 14px;
+      background: #fff;
+      color: #000;
+      font-weight: bold;
+      font-size: 28px;
+      text-decoration: none;
+      box-shadow: 0 8px 20px rgba(255,255,255,0.2);
+      transition: transform 0.2s ease;
+    }
+    .cta:hover {
+      transform: scale(1.05);
+    }
+    .footer {
+      position: absolute;
+      bottom: 40px;
+      width: 100%;
+      text-align: center;
+      font-size: 22px;
+      color: rgba(255,255,255,0.6);
+    }
+  </style>
+</head>
+<body>
+  <div class="poster">
+    <div class="poster-content">
+      <div class="poster-logo">
+        <img src="Copiate.png" alt="Copiate Logo" />
+      </div>
+      <h1 class="brand">Copiate</h1>
+      <div class="tagline">Online Clothing</div>
+
+      <div class="offer">
+        <div class="offer-title">Limited Offer</div>
+        <div class="offer-text">First 100 Customers Get 20% OFF</div>
+      </div>
+
+      <div class="subline">Trendy • Affordable • Fast Delivery</div>
+      <a href="#" class="cta">Shop Now</a>
+    </div>
+    <div class="footer">Follow & Shop @copiate</div>
+  </div>
+</body>
+</html>
